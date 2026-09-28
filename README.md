@@ -116,4 +116,9 @@ Proyecto basado en Bodystyle y su documentación visual, desarrollada para facil
 
 ---
 
-Si quieres, puedo dejarte una segunda versión del README más orientada a GitHub, con badges, instalación, demo, y una estructura más profesional para publicarlo en un repositorio.
+<div align="center">
+
+### Hecho con ❤️ por **Fede Manzano**
+
+</div>
+
