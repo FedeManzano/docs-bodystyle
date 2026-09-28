@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página no encontrada en la documentación de Bodystyle.">
+    <link rel="canonical" href="https://fedemanzano.github.io/docs-bodystyle/404.html">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>404 | Bodystyle</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --carbon: #0a0a0a;
+            --wine: #2d1420;
+            --rose: #f1a4bf;
+            --white: #ffffff;
+            --muted: #d8cbd0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+            overflow: hidden;
+            color: var(--white);
+            font-family: Inter, system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, var(--carbon) 0%, #1a0a0f 32%, var(--wine) 58%, #0f0f10 100%);
+        }
+
+        main {
+            width: min(100%, 42rem);
+            text-align: center;
+            animation: appear 500ms ease-out both;
+        }
+
+        .brand {
+            width: min(12rem, 45vw);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .code {
+            margin: 0;
+            color: var(--rose);
+            font-size: clamp(5rem, 18vw, 10rem);
+            font-weight: 700;
+            line-height: 0.9;
+            letter-spacing: 0.02em;
+        }
+
+        h1 {
+            margin: 1.5rem 0 0.75rem;
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+        }
+
+        p {
+            max-width: 32rem;
+            margin: 0 auto 2rem;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        a {
+            display: inline-block;
+            padding: 0.85rem 1.4rem;
+            border: 1px solid var(--rose);
+            border-radius: 999px;
+            color: var(--white);
+            text-decoration: none;
+            transition: background-color 180ms ease, color 180ms ease;
+        }
+
+        a:hover,
+        a:focus-visible {
+            color: var(--carbon);
+            background: var(--rose);
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(1rem);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <img class="brand" src="images/logo_bodystyle.svg" alt="Bodystyle">
+        <p class="code">404</p>
+        <h1>Página no encontrada</h1>
+        <p>La dirección que buscas no existe o ha cambiado. Vuelve a la documentación para continuar.</p>
+        <a href="./">Volver al inicio</a>
+    </main>
+</body>
+
+</html>

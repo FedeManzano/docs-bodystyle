@@ -1,0 +1,2 @@
+# Redirige los errores 404 a la página personalizada de Bodystyle.
+ErrorDocument 404 /404.html
