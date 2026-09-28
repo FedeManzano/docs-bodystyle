@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Comienzo de la documentación de bodystyle.">
+     <link rel="canonical" href="https://bodystyle.webcindario.com/paginas/get_started.html">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="../css/bodystyle.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/FedeManzano/bodystyle-icons/refs/heads/master/iconos/bs-iconos.min.css">
+    <link rel="stylesheet"
+        href="../css/show-dark.min.css">
+    <title>Get Started</title>
+</head>
+
+<body>
+    <section class="theme-light mb-3">
+
+        <div id="lista-busqueda" class="search-list"></div>
+        <!--Barra de navegación -->
+        <nav id="nav" class="bs-nav bs-nav-fixed"></nav>
+
+        <div id="sidebar" class="bs-sidebar-drop-light "></div>
+
+        <section id="main">
+            <div id="componente_busqueda" class="input-g mb-2 ancho-50 ancho-m-60 ancho-s-80 ancho-xs-100" role="search">
+                <div class="grupo">
+                    <span id="span_buscador" class="span-grupo fd-gris-n c-white" aria-hidden="true">🔎</span>
+                    <input 
+                        aria-label="Buscar en la documentación" 
+                        aria-describedby="search-hint"
+                        aria-controls="search-results"
+                        class="fd-gris-n c-white" 
+                        type="search" 
+                        name="" 
+                        id="buscador" 
+                        placeholder="Buscar en la documentación...">
+                </div>
+            </div>
+
+            <h1  id="1" class="scroll-item">🚀 Get Started</h1>
+            <p class="fz-20 fz-m-19 fz-s-18 fz-xs-16">
+                Bodystyle biblioteca de Software libre para la creación del
+                <span class="badge badge-gris com-trigger"
+                    data-info="Vista de las sitios y aplicaciones web desde el lado del usuario." data-evt="hover"
+                    data-pos="top">Front-End</span> de sitios y aplicaciones
+                web conformada, como se analizará en apartados posteriores, por cuatro módulos que conforman el <span
+                    class="badge badge-gris">core</span> de
+                la biblioteca. A partir del core se podrán agrupar elementos de diferentes características y
+                distribuirlos
+                de manera correcta por toda la
+                <span class="badge badge-gris com-trigger"
+                    data-info="Interfaces bien diseñadas para que el usuario pueda utilizarla sin demasiado esfuerzo.">interfaz
+                    de usuario UI</span>.<br>
+                El objetivo de este trabajo es brindarle herramientas a los desarrolladores para que puedan crear
+                diseños innovadores y se enfoquen en la mejora continua de la
+                <span class="badge badge-gris com-trigger"
+                    data-info="Gratificación que siente el usuario al momento de utilizar una aplicación o un producto informático.">experiencia
+                    de usuario UX</span>.
+            </p>
+
+            
+
+            <div id="info_general"></div>
+
+            <h4 class="my-3 "><i class="bs-check fz-20 c-green-s">&nbsp;</i>Novedades en esta versión</h4>
+            <div class="lista-doc mt-3 mb-3">
+                
+                <ul>
+                    <li class="com-trigger"
+                        data-info="Se generó una nueva y mejorada documentación para Bodystyle, facilitando la comprensión y el uso de la biblioteca."
+                        data-pos="right">✅ Documentación Mejorada</li>
+                    <li class="com-trigger"
+                        data-info="Se agregaron alertas más detalladas y útiles para informar a los usuarios sobre eventos importantes o acciones necesarias."
+                        data-pos="right">✅ <a href="#" class="link">Alertas Mejoradas</a></li>
+                    <li class="com-trigger"
+                        data-info="Se realizaron mejoras en el archivo <strong>_flexbox.scss</strong> para incorporar el gap (Separación entre los elementos)."
+                        data-pos="right">✅ <a href="#" class="link">Flexbox Mejorado</a></li>
+                    <li class="com-trigger"
+                        data-info="Se añadió el efecto scroll para que el contenido aparezca de manera gradual mientras el usuario navega por la página en desarrollo."
+                        data-pos="right">✅ <a href="#" class="link">Efecto Scroll</a></li> 
+                    <li class="com-trigger"
+                        data-info="Correccion de errores menores en la biblioteca para mejorar su funcionamiento y estabilidad."
+                        data-pos="right">✅ Corrección de Errores</li>
+                    <li class="com-trigger"
+                        data-info="Se incorporó la animación SlideUp y SlideDown para mejorar la experiencia visual al mostrar u ocultar elementos en la interfaz de usuario."
+                        data-pos="right">✅ <a href="animaciones.html" class="link">Animaciones Mejoradas</a></li>
+                    <li class="com-trigger"
+                        data-info="Se reemplazó la fuente Roboto con la fuente Inter, que es más moderna y legible."
+                        data-pos="right">✅ Fuente Inter</li>
+                </ul>
+            </div>
+
+            <article class="article card-simple-dark mt-3 mb-3 p-3">
+                <h2 class="scroll-item mb-2" id="2">🏗️ La Filosofía de Bodystyle</h2>
+                <p class="fz-18 mb-2">
+                    <strong>Bodystyle NO es un framework cerrado ni un conjunto de componentes predefinidos.</strong> 
+                    Es una <span class="badge badge-bodyui">BASE DE CONSTRUCCIÓN</span> modular y flexible.
+                </p>
+                <div class="lista-doc">
+                    <ul class="c-white">
+                        <li><i class="bs-check c-green-s"></i>&nbsp;<strong>Proporciona los bloques fundamentales:</strong> Grid responsivo, Utilitarios CSS, Dynamics (posicionamiento), Show Syntax (highlighting)</li>
+                        <li><i class="bs-check c-green-s"></i>&nbsp;<strong>Tú decides cómo combinarlos:</strong> No impone patrones ni estructuras rígidas</li>
+                        <li><i class="bs-check c-green-s"></i>&nbsp;<strong>Tú creas diseños únicos:</strong> Los elementos son herramientas, no soluciones finales</li>
+                        <li><i class="bs-check c-green-s"></i>&nbsp;<strong>Máxima libertad creativa:</strong> Combina, personaliza y crea sin limitaciones</li>
+                    </ul>
+                </div>
+                <p class="fz-18 mt-2">
+                    <i class="bs-lightbulb c-yellow"></i> A diferencia de otros frameworks populares que te obligan a seguir su estructura, 
+                    <strong>Bodystyle te empodera para crear tus propios diseños</strong> usando una base sólida y bien construida.
+                </p>
+            </article>
+
+
+            <article class="article">
+                <h2 class="scroll-item" id="3">Core de Bodystyle</h2>
+                <p>
+                    El core de bodystyle lo conforman cuatro módulos principales que se pueden descargar por separado
+                    para disponer de lo que proveen, pero que son integrados en esta biblioteca para tener a disposición
+                    el conjunto completo de funcionalidades para el desarrollo y diseño de la interfaz de usuario.
+                </p>
+
+                <div class="table-responsive">
+                    <table class="vertical-border table-sm selector">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Versión</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Grid</td>
+                                <td>6.5.0</td>
+                                <td>
+                                    <a target="_blank" href="https://mega.nz/file/0AMFRJTI#m7jZbhubbQyecdwasf5hA1goQEAT0YTNNxPoxh_i_sI" class="link com-trigger" data-info="Descargar sólo la grilla" data-pos="left">Descargar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Utilitarios</td>
+                                <td>6.5.0</td>
+                                <td>
+                                    <a target="_blank" href="https://mega.nz/file/IVskib6T#x7cYUGISEbASO6wj6k24gV5uhQK5ZYSFXO1rgVIglO8" class="link com-trigger" data-info="Descargar sólo los utilitarios" data-pos="left">Descargar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dynamics Tips</td>
+                                <td>3.0.0</td>
+                                <td>
+                                    <a target="_blank" href="https://mega.nz/file/hI9RWToJ#H6No147H25Bxh6hE8Q2jlGSB-JBbTYHBgoGBptaFnUw" class="link com-trigger" data-info="Descargar el núcleo de posicionamiento dinámico, de manera tal de poder utilizar los <span class='f-w-7'>ToolTips, Comentarios, Dropdown, Toast y Tips Personalizados.</span>" data-pos="left">Descargar</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Show Sintax</td>
+                                <td>2.0.0</td>
+                                <td>
+                                    <a target="_blank" href="https://mega.nz/file/xVVFCaxR#oBrMTHaTmhwca9ajcSyM65XpoP_UHJH3g-qbv3ymP3w" class="link com-trigger" data-info="Descargar la dependencia que permite colorear la sintaxis del código de progración <span class='f-w-7'>(Java, C, CSS, HTML y JS)</span>" data-pos="left">Descargar</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            
+            </article>
+
+
+            <article class="article">
+                <h2 id="4" class="scroll-item">Utilizar Bodystyle</h2>
+                <p>
+                    Para utilizar la biblioteca disponemos de tres métodos diferentes:
+                </p>
+                <div class="lista-doc">
+                    <ul>
+                        <li><a href="#5" class="link tips-ele" data-tips="<i class='bs-code c-yellow'>&nbsp;</i>Archivos Procesados" data-pos="right">Descarga Directa</a></li>
+                        <li><a href="#6" class="link tips-ele" data-tips="<i class='bs-code c-yellow'>&nbsp;</i>CDN de archivos base" data-pos="right">CDN</a></li>
+                        <li><a href="#7" class="link tips-ele" data-tips="<i class='bs-code c-yellow'>&nbsp;</i>A través de NPM" data-pos="right">NPM</a></li>
+                    </ul>
+                </div>
+
+                <h3 id="5" class="scroll-item">Descarga Directa</h3>
+
+                <p>
+                    Para poder agregar Bodystyle a nuestro proyecto con los archivos procesados directamente lo haremos a través de la 
+                    descarga directa, que permitirá simplemente el agregado del archivo de estilos y de lógica (JavaScript) al html en desarrollo. <br>
+                    Todo esto lo podemos realizar en tres sensillos pasos:
+                </p>
+
+                <h4 class="mb-3"><i class=" bs-check c-green-s">&nbsp;</i>Enlace de Descarga</h4>
+                <p>
+                    A través del botón que figura abajo descargamos el archivo zip que contendrá todo Bodystyle en su última versión.
+                </p>
+
+                <a href="https://mega.nz/file/8cFFjSYZ#y82eMpvPRGRoQZUA8Lktuj3oHmFVMonJAE8hgFHj1MA" class="btn-lg btn-bodyui-o bor-pill mb-3"><i class="bs-download fz-20">&nbsp;</i>Descargar</a>
+
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        TEXT 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="pt-1">
+📁 bs_vX.X.X/
+├── 📁 css/
+│   ├── 📄bodystyle.css
+│   ├── 📄 bodystyle.map.css
+│   ├── 📄bodystyle.min.css
+│   └── 📄bodystyle.map.css
+├── 📁 js/
+│   ├── 📄bodystyle.js
+│   ├── 📄bodystyle.bundled.js
+│   └── 📄bodystyle.min.js
+└──🌐 Enlace al repositorio.html
+
+</pre>
+</div>
+
+                <h4 class="mb-3">Estilos CSS</h4>
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <!-- Agregar dentro de la etiqueta Header de la página en desarrollo -->
+    <link rel="stylesheet" href="path/bodystyle.min.css"> <!--Archivo Minificado-->
+</pre>
+</div>
+
+        <h4 class="mb-3">Lógica JavaScript</h4>
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <!-- Agregar antes de la finalización del body -->
+    <script src="path/bodystyle.min.js"></script> <!--Archivo Minificado-->
+</pre>
+</div>
+
+            <h3 id="6" class="scroll-item" class="mb-3">CDN</h3>
+            <p>
+                Otra forma sencilla de agregar Bodystyle a nuestro proyecto es a través de un CDN (Content Delivery
+                Network), que nos permitirá enlazar los archivos directamente desde un servidor externo sin necesidad
+                de descargarlos y alojarlos localmente.
+            </p>
+
+            <h4 class="mb-3"><i class=" bs-check c-green-s">&nbsp;</i>Estilos</h4>
+
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <!-- Agregar dentro de la etiqueta Header de la página en desarrollo -->    
+    <link rel="stylesheet" href="https://raw.githack.com/FedeManzano/bodystyle/refs/heads/master/dist/css/bodystyle.min.css"> <!--Archivo Minificado-->
+</pre>
+</div>
+            <h4 class="mb-3"><i class=" bs-check c-green-s">&nbsp;</i>JS</h4>
+
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <!-- Agregar antes del cierre de la etiqueta </body> -->    
+    <script src="https://raw.githack.com/FedeManzano/bodystyle/refs/heads/master/dist/js/bodystyle.min.js"></script> <!--Archivo Minificado-->
+</pre>
+</div>
+
+                <div class="alert">
+                    <h4 class="c-blue-s"><i class=" bs-info c-blue-s fz-28">&nbsp;</i>Información</h4>
+                    <p>
+                        Una vez que se hayan agregado los enlaces de CSS y JS al proyecto, se podrá comenzar a utilizar
+                        todas las funcionalidades que Bodystyle ofrece para el desarrollo de la interfaz de usuario.
+                    </p>
+                </div>
+
+                <h3 class="scroll-item" id="7">NPM</h3>
+                <p>
+                    Bodystyle también se puede instalar y gestionar a través de NPM (Node Package Manager), lo que facilita la
+                    integración de la biblioteca en proyectos basados en Node.js y permite una gestión más eficiente de los 
+                    recursos provistos por Bodystyle.
+                </p>
+
+                <h4 class="mb-3"><i class=" bs-check c-green-s">&nbsp;</i>Instalación</h4>
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        TEXT 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="pt-1">
+    npm install bodyui2
+</pre>
+</div>
+
+                <h4 class="mb-3"><i class=" bs-check c-green-s">&nbsp;</i>Importación</h4>
+
+                <p>
+                    Una vez instalado, Bodystyle se puede importar en los archivos JavaScript del proyecto de la siguiente manera:
+                </p>
+<div class="codigo">
+    <label for="cod-js" 
+    class="label">
+        JS
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="pt-1 cod-js">
+    /*=== Importar Bodystyle en el proyecto global ===*/
+    import 'bodyui2/dist/css/bodystyle.min.css'; // Importar estilos CSS
+    import 'bodyui2/dist/js/bodystyle.min.js';   // Importar
+
+    /*=== Importar Bodystyle en el proyecto individual ===*/
+    // Es posible solo importar los módulos necesarios según las necesidades del proyecto
+    import Alerta from 'node_modules/bodyui2/src/modulos/Alertas'; // Importar solo el módulo de Alertas
+    import Animaciones from 'node_modules/bodyui2/src/modulos/Animaciones'; // Importar solo el módulo de Animaciones
+    import BotonInicio from 'node_modules/bodyui2/src/modulos/BotonInicio'; // Importar solo el módulo de BotonInicio
+    import CodigoC from 'node_modules/bodyui2/src/modulos/CodigoC'; // Importar solo el módulo de CodigoC
+    import CodigoHtml from 'node_modules/bodyui2/src/modulos/CodigoHtml'; // Importar solo el módulo de CodigoHtml
+    import CodigoJs from 'node_modules/bodyui2/src/modulos/CodigoJs'; // Importar solo el módulo de CodigoJs
+    import CodigoCss from 'node_modules/bodyui2/src/modulos/CodigoCss'; // Importar solo el módulo de CodigoCss
+    import CodigoJava from 'node_modules/bodyui2/src/modulos/CodigoJava'; // Importar solo el módulo de CodigoJava
+    import Coleeciones from 'node_modules/bodyui2/src/modulos/Coleeciones'; // Importar solo el módulo de Colecciones
+    import ComentarioDinamico from 'node_modules/bodyui2/src/modulos/ComentarioDinamico'; // Importar solo el módulo de Comentarios
+    import ColeccionFlotante from 'node_modules/bodyui2/src/modulos/ColeccionFlotante'; // Importar solo el módulo de ColeccionFlotante    
+    import Dropdown from 'node_modules/bodyui2/src/modulos/Dropdown'; // Importar solo el módulo de Dropdown
+    import Desactivado from 'node_modules/bodyui2/src/modulos/Desactivado'; // Importar solo el módulo de Desactivado
+    import EfectoScroll from 'node_modules/bodyui2/src/modulos/EfectoScroll'; // Importar solo el módulo de EfectoScroll
+    import Imagenes from 'node_modules/bodyui2/src/modulos/Imagenes'; // Importar solo el módulo de Imagenes
+    import ImputHandler from 'node_modules/bodyui2/src/modulos/ImputHandler'; // Importar solo el módulo de InputHandler
+    import Modal from 'node_modules/bodyui2/src/modulos/Modal'; // Importar solo el módulo de Modales
+    import Navigation from 'node_modules/bodyui2/src/modulos/Navigation'; // Importar solo el módulo de Navigation
+    import Personalizado from 'node_modules/bodyui2/src/modulos/Personalizado'; // Importar solo el módulo de Personalizado
+    import Paralax from 'node_modules/bodyui2/src/modulos/Paralax'; // Importar solo el módulo de Paralax
+    import SidebarDrop from 'node_modules/bodyui2/src/modulos/SidebarDrop'; // Importar solo el módulo de SidebarDrop
+    import Range from 'node_modules/bodyui2/src/modulos/Range'; // Importar solo el módulo de Input Range
+    import Select from 'node_modules/bodyui2/src/modulos/Select'; // Importar solo el módulo de Select
+    import ScrollSpy from 'node_modules/bodyui2/src/modulos/ScrollSpy'; // Importar solo el módulo de ScrollSpy
+    import Tabs from 'node_modules/bodyui2/src/modulos/Tabs'; // Importar solo el módulo de Tabs // Devuelve una instacia de clase
+    import Toast from 'node_modules/bodyui2/src/modulos/Toast'; // Importar solo el módulo de Toast
+    import ToolTips from 'node_modules/bodyui2/src/modulos/ToolTips'; // Importar solo el módulo de ToolTips
+    import Waves from 'node_modules/bodyui2/src/modulos/Waves'; // Importar solo el módulo de Waves
+</pre>
+</div>
+                <div class="alert">
+                    <h4 class="c-blue-s"><i class=" bs-info c-blue-s fz-28">&nbsp;</i>Información</h4>
+                    <p>
+                        Después de importar Bodystyle, es posible inicializar los módulos necesarios en el proyecto
+                        utilizando las funciones de inicialización proporcionadas por la biblioteca. <br>
+                        Todos los módulos tienen la funcion <span class="badge badge-red">iniciar()</span> y 
+                        <span class="badge badge-red">destroy()</span>.
+                    </p>
+                </div>
+
+                <div class="alert">
+                    <h4 class="c-yellow"><i class=" bs-info c-yellow fz-28">&nbsp;</i>Advertencia</h4>
+                    <p>
+                        Cuando utilizamos la función destroy() para desvincular los eventos de los diferentes elementos eliminamos 
+                        el funcionamiento asociado pero no la visual de los elementos, solo el BotonInicio se elimina 
+                        completamente ya que es 100% dinámico.
+                    </p>
+                </div>
+
+                <h4 class="mb-3">Ejemplo</h4>
+<div class="codigo">
+    <label for="cod-js" 
+    class="label">
+        JS
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="pt-1 cod-js">
+    // Global a través del OBJETO BS
+    BS.NavigationInit("#nav"); // Inicializar el módulo de navegación
+    BSNavigationDestroy(); // Desvincular los eventos del módulo de navegación
+
+    // Individual a través de la clase
+    import Navigation from 'node_modules/bodyui2/src/modulos/Navigation';
+    Navigation.iniciar("#nav"); // Inicializar el módulo de navegación
+    Navigation.destroy(); // Desvincular los eventos del módulo de navegación
+</pre>
+</div>
+            </article>
+
+
+
+            <article class="article">
+                <h2 id="8" class="scroll-item">Primeros Pasos</h2>
+                <p>
+                    La manera más sencilla de agregar a bodystyle al proyecto en desarrollo es a través de la plantilla
+                    proporcionada en el <span class="badge badge-red">README.md</span> del repositorio, utilizandola 
+                    se podrán realizar todas las pruebas convenientes para aprender y testear la diferentes funcionalidades
+                    que ofrece la biblioteca.
+                </p>
+
+                
+                <a target="_blank" href="https://github.com/FedeManzano/bodystyle?tab=readme-ov-file#-inicio-r%C3%A1pido" class="btn-lg-o btn-bodyui-o bor-pill com-trigger"
+                data-info="Es un template rápido para probar y aprender, <span class='f-w-7'>No recomendado para producción</span>">Template</a>
+
+
+                <div class="alert mt-3">
+                    <h4 class="c-yellow"><i class=" bs-info c-yellow fz-28">&nbsp;</i>Advertencia</h4>
+                    <p>
+                        Es importante recalcar que la plantilla es solo un punto de partida y que se pueden realizar
+                        modificaciones y adaptaciones según las necesidades específicas del proyecto en desarrollo. <br>
+                        Sin embargo, contaremos únicamente con las funcionalidades básicas. Para realizar modificaciones y adaptar a bodystyle 
+                        al proyecto en desarrollo las opciones antes vistas (Descarga Directa y NPM) son las recomendadas. 
+                    </p>
+                </div>
+            </article>
+
+            <article class="article">
+                <h2 class="scroll-item" id="9">Navegadores</h2>
+                <p>
+                    Los navegadores soportados por Bodystyle son los siguientes:
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table-sm selector vertical-border">
+                        <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Versión Mínima</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Google Chrome
+                                </td>
+                                <td>60 +</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Mozilla Firefox
+                                </td>
+                                <td>60 +</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Microsoft Edge
+                                </td>
+                                <td>79 +</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Safari
+                                </td>
+                                <td>12 +</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Opera
+                                </td>
+                                <td>47 +</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </article>
+            <article class="article">
+                <h2 id="10" class="scroll-item">FAQ</h2>
+                <p>
+                    Para la nueva versión de Bodystyle se está trabajando en una sección de preguntas frecuentes (FAQ)
+                    que ayudará a resolver las dudas más comunes que puedan surgir durante el uso de la biblioteca.
+                </p>
+
+                <h3 class="scroll-item" id="11">ScrollSpy vs Reveal</h3>
+                <p>
+                    Desde la versión de bodystyle 6.5.0 se añadió el módulo Efecto Scroll (Reveal) que permite mostrar
+                    elementos de manera gradual a medida que el usuario navega por la página. <br>
+                    Ambos módulos no pueden utilizarse a la vez, ya que el scrollspy se volvería loco y no funcionaría correctamente.
+                    Por lo tanto, se recomienda utilizar uno u otro según las necesidades del proyecto en desarrollo.   
+                </p>
+                <h3 class="scroll-item" id="12">Fuente Nueva</h3>
+                <p>
+                    Desde la versión 6.5.0 se cambió la fuente a <a href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" class="link">Inter</a>
+                    descargada de el sitio oficial de Google Fonts. <br>
+                    Esta fuente es moderna, legible y optimizada para pantallas digitales, lo que mejora la experiencia de usuario en la mayoría de los dispositivos.       
+                </p>
+                <h3 class="scroll-item" id="13">Angular / React</h3>
+                <p>
+                     A partir de la versión 6.0.0 Bodystyle es compatible con frameworks modernos como Angular y React. <br>
+                     Se pueden integrar los módulos de Bodystyle en proyectos desarrollados con estos frameworks, permitiendo aprovechar 
+                     las funcionalidades de la biblioteca en aplicaciones web dinámicas y reactivas. <br>
+                     No hace falta ejecutar las funciones de inicialización de los módulos en el método del ciclo de vida correspondiente a después
+                     de la carga del DOM, ya que Bodystyle se encargará de inicializar los módulos automáticamente. 
+                </p>
+
+<div class="codigo">
+    <label for="cod-js" 
+    class="label">
+        JS
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="pt-1 cod-js">
+    <!-- Angular Agregar este código en angular.json-->
+    "styles": [
+        "src/styles.scss",
+        "node_modules/bodyui2/dist/css/bodystyle.min.css"
+    ],
+    "scripts": [
+        "node_modules/bodyui2/dist/js/bodystyle.min.js"
+    ]
+
+    /****************//////////////////////*********************/
+
+    declare var BS: any; // Declarar el Objeto global BS
+
+    // Luego para utilizar el Objeto gloabal BS
+    ngOnInit() {
+        BS.ToolTipsInit();
+        BS.CommentInit();
+        // Otros módulos según sea necesario
+    }
+</pre>
+</div>
+            <h3 class="scroll-item" id="14">Porque Bodystyle?</h3>
+            <p>
+                La mayoría de los frameworks actuales para frontend están orientados a generar y aportar componentes
+                predefinidos para el desarrollo web, pero no brindan herramientas para la creación de diseños únicos
+                y personalizados. <br>
+                A partir de esta biblioteca aprenderemos a como crear estilos desde una base sólida para la personalización 
+                y para volcar en cada las ideas de diseño que le parezcan interesantes a cada desarrollador. <br>
+                Bodystyle está pensado para que cada desarrollador pueda crear su propio estilo y diseño, partiendo de una base.
+
+            </p>
+            </article>
+            <article class="article">
+                <h3 id="15" class="scroll-item">Autor</h3>
+                <div id="autor_content"></div>
+            </article>
+
+        </section>
+    </section>
+
+
+
+    <div class="lista-scroll ocultar-desde-medianos">
+        <ul>
+            <li><a href="#1">📇 Get Started</a></li>
+            <li><a href="#2">📇 Filosofía</a></li>
+            <li><a href="#3">📇 Core Bodystyle</a></li>
+            <li><a href="#4">📇 Utilizar Bodystyle</a></li>
+            <li><a href="#5">📇 Descarga Directa</a></li>
+            <li><a href="#6">📇 CDN</a></li>
+            <li><a href="#7">📇 NPM</a></li>
+            <li><a href="#8">📇 Primeros Pasos</a></li>
+            <li><a href="#9">📇 Navegadores</a></li>
+            <li><a href="#10">📇 FAQ</a></li>
+            <li><a href="#11">📇 ScrollSpy vs Reveal</a></li>
+            <li><a href="#12">📇 Fuente Nueva</a></li>
+            <li><a href="#13">📇 Angular / React</a></li>
+            <li><a href="#15">🧑‍🏫 Autor</a></li>
+        </ul>
+    </div>
+
+    <script src="../js/docs-body.js"></script>
+    <script>
+        // Inicializar el Sidebar
+        BS.SidebarDropInit({ idNav: "#nav", idSidebar: "#sidebar", submenu: "#l1" });
+        BS.CommentInit()
+        BS.ToolTipsInit()
+        BS.BotonInicioInit()
+        BS.CodigoHtmlInit()
+        BS.CodigoJsInit()
+        BS.PersonalizadoInit({ori: "disparador"})
+        document.querySelectorAll("#l1 ul li a")[1].classList.add("c-red");
+
+    </script>
+</body>
+
+</html>
+
+
+

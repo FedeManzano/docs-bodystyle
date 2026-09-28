@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Utilitarios de bordes, permiten gestionar los bordes de los elementos.">
+     <link rel="canonical" href="https://bodystyle.webcindario.com/paginas/bordes.html">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="../css/bodystyle.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/FedeManzano/bodystyle-icons/refs/heads/master/iconos/bs-iconos.min.css">
+    <link rel="stylesheet"
+        href="../css/show-dark.min.css">
+    <title>Bordes</title>
+</head>
+
+<body>
+
+    <section class="theme-light mb-3">
+        <!--Busqueda-->
+        <div id="lista-busqueda" class="search-list"></div>
+        <!--Barra de navegación -->
+        <nav id="nav" class="bs-nav bs-nav-fixed"></nav>
+
+        <div id="sidebar" class="bs-sidebar-drop-light "></div>
+
+        <section id="main">
+             <div id="componente_busqueda" class="input-g mb-2 ancho-50 ancho-m-60 ancho-s-80 ancho-xs-100" role="search">
+                <div class="grupo">
+                    <span id="span_buscador" class="span-grupo c-white" aria-hidden="true"><i class="bs-search"></i></span>
+                    <input 
+                        aria-label="Buscar en la documentación" 
+                        aria-describedby="search-hint"
+                        aria-controls="search-results"
+                        class="fd-gris-n c-white" 
+                        type="search" 
+                        name="" 
+                        id="buscador" 
+                        placeholder="Buscar en la documentación...">
+                </div>
+            </div>
+            <h1 id="1" class="scroll-item">🧱 Bordes</h1>
+            <p class="fz-20 fz-m-19 fz-s-18 fz-xs-16">
+                Bodystyle ofrece una variedad de utilitarios para gestionar los bordes de los elementos de manera
+                sencilla y eficiente. Estos utilitarios permiten aplicar bordes redondeados 
+                y controlar el grosor y el estilo de los bordes. A continuación, se detallan los
+                diferentes utilitarios disponibles para trabajar con bordes en Bodystyle.
+            </p>
+
+            <div id="info_general"></div>
+
+            <article class="article">
+                <h2 class="scroll-item">📋 Tabla de Referencia Rápida</h2>
+                <div class="table-responsive">
+                    <table class="table-sm selector vertical-border">
+                        <thead>
+                            <tr>
+                                <th>Sección</th>
+                                <th>Clase</th>
+                                <th>Descripción</th>
+                                <th>Rango</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Bordes Radio [PX]</strong></td>
+                                <td><code>.bor-rad-[PX]</code></td>
+                                <td>Radio de bordes en píxeles</td>
+                                <td>0 - 20px</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><code>.bor-pill</code></td>
+                                <td>Borde completamente redondeado</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bordes Radio [%]</strong></td>
+                                <td><code>.bor-rad-por-[%]</code></td>
+                                <td>Radio de bordes en porcentaje</td>
+                                <td>0% - 50%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bordes Sólidos</strong></td>
+                                <td><code>.bor-[PX]</code></td>
+                                <td>Borde negro sólido</td>
+                                <td>1 - 10px</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5"><strong>Bordes Colores</strong></td>
+                                <td><code>.bor-red-[PX]</code></td>
+                                <td>Borde rojo</td>
+                                <td>1 - 10px</td>
+                            </tr>
+                            <tr>
+                                <td><code>.bor-blue-[PX]</code></td>
+                                <td>Borde azul</td>
+                                <td>1 - 10px</td>
+                            </tr>
+                            <tr>
+                                <td><code>.bor-green-[PX]</code></td>
+                                <td>Borde verde</td>
+                                <td>1 - 10px</td>
+                            </tr>
+                            <tr>
+                                <td><code>.bor-gray-[PX]</code></td>
+                                <td>Borde gris</td>
+                                <td>1 - 10px</td>
+                            </tr>
+                            <tr>
+                                <td><code>.bor-[COLOR]-s-[PX]</code></td>
+                                <td>Variante clara del color</td>
+                                <td>1 - 10px</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <article class="article">
+                <h2 id="2" class="scroll-item">Bordes Radio [PX]</h2>
+                <p>
+                    A continuación veremos como aplicar bordes redondeados a paratir de un conjunto de clases 
+                    que permitirán definir el radio de los bordes en píxeles. <br>
+                    Las clases utilizadas son <span class="badge badge-red">.bor-rad-[PX]</span> donde PX hace referencia 
+                    a la cantidad de píxeles que se desea aplicar como radio al borde del elemento que puede ir desde 0 hasta 20PX.
+                </p>
+                
+                <div class="row">
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-0">.bor-rad-0</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-1">.bor-rad-1</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-2">.bor-rad-2</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-3">.bor-rad-3</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-4">.bor-rad-4</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-5">.bor-rad-5</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-6">.bor-rad-6</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-7">.bor-rad-7</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-8">.bor-rad-8</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-9">.bor-rad-9</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-10">.bor-rad-10</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-11">.bor-rad-11</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-12">.bor-rad-12</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-13">.bor-rad-13</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-14">.bor-rad-14</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-15">.bor-rad-15</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-16">.bor-rad-16</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-17">.bor-rad-17</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-18">.bor-rad-18</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-19">.bor-rad-19</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-20">.bor-rad-20</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-red bor-pill">.bor-pill</div>
+                </div>
+
+            </article>
+
+            <article class="article">
+                <h2 id="3" class="scroll-item">Borde Pill (.bor-pill)</h2>
+                <p>
+                    La clase <span class="badge badge-bodyui">.bor-pill</span> aplica un borde completamente redondeado al elemento, 
+                    creando una forma de píldora o cápsula. Es ideal para botones, badges, tags y otros elementos que requieren un aspecto suave y moderno.
+                </p>
+                <p><strong>Propiedad CSS equivalente:</strong> <code>border-radius: 50px</code> (o valor muy alto)</p>
+
+                <h3 class="mt-4">Ejemplos de Uso</h3>
+                <p class="mt-2"><strong>Botones Pill:</strong></p>
+                <div class="d-flex just-around flex-wrap-s mb-3">
+                    <button class="btn btn-cover bg-bodyui bor-pill">Botón Pill</button>
+                    <button class="btn btn-cover bg-green bor-pill">Verde</button>
+                    <button class="btn-o btn-blue-o bor-pill">Outline</button>
+                </div>
+
+                <p class="mt-2"><strong>Badges Pill:</strong></p>
+                <div class="d-flex just-around flex-wrap-s mb-3">
+                    <span class="badge badge-red bor-pill">Nuevo</span>
+                    <span class="badge badge-green bor-pill">Activo</span>
+                    <span class="badge badge-yellow bor-pill">Pendiente</span>
+                </div>
+
+                <p class="mt-2"><strong>Comparación:</strong></p>
+                <div class="row">
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black mb-2">.sin-radio</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-5 mb-2">.bor-rad-5</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-red bor-pill mb-2">.bor-pill</div>
+                </div>
+
+<div class="codigo mt-3">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <!-- Botones Pill -->
+    <button class="btn btn-cover bg-bodyui bor-pill">Botón Pill</button>
+    <button class="btn btn-cover bg-green bor-pill">Verde</button>
+    <button class="btn-o btn-blue-o bor-pill">Outline</button>
+    
+    <!-- Badges Pill -->
+    <span class="badge badge-red bor-pill">Nuevo</span>
+    <span class="badge badge-green bor-pill">Activo</span>
+    <span class="badge badge-yellow bor-pill">Pendiente</span>
+</pre>
+</div>
+
+                <div class="alert mt-3">
+                    <h4 class="c-blue-s"><i class="bs-info c-blue-s fz-25">&nbsp;</i>Información</h4>
+                    <p>
+                        <strong>Casos de uso:</strong> Botones de acción, badges de estado, etiquetas, chips, notificaciones.<br>
+                        <strong>Compatibilidad:</strong> <code>.bor-pill</code> funciona con cualquier elemento y se puede combinar con colores, tamaños y otros estilos.<br>
+                        <strong>Diferencia con .bor-rad-20:</strong> <code>.bor-pill</code> es más extremo, asegurando la máxima curvatura independientemente del tamaño del elemento.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="article">
+                <h2 id="4" class="scroll-item">Bordes Radio [%]</h2>
+                <p>
+                    También es posible aplicar bordes redondeados utilizando porcentajes para definir el radio de los
+                    bordes. <br>
+                    Las clases utilizadas son <span class="badge badge-red">.bor-rad-por-[%]</span> donde % hace referencia 
+                    al porcentaje que se desea aplicar como radio al borde del elemento que puede ir desde 0% hasta 50%.
+                </p>
+
+                <div class="row">
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-0">.bor-rad-por-0</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-10">.bor-rad-por-10</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-20">.bor-rad-por-20</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-30">.bor-rad-por-30</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-40">.bor-rad-por-40</div>
+                    <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-50">.bor-rad-por-50</div>
+                </div>
+
+                <div class="alert mt-3">
+                    <h4 class="c-blue-s"><i class=" bs-info c-blue-s fz-28 ">&nbsp;</i>Información</h4>
+                    <p>
+                        Es importante a clarar que en el caso bor-rad-por-50 permite generar contenedores redondos si 
+                        los mismos son cuadrados.
+                    </p>
+                </div>
+
+                <div class="cxs-12 cs-6 cm-4 cl-3 c-white ta-c bg-black bor-rad-por-50 d-flex just-center ali-center m-3"
+                style="width: 200px; height: 200px;">.bor-rad-por-50</div>
+
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <div class="row">
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-0">.bor-rad-por-0</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-10">.bor-rad-por-10</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-20">.bor-rad-por-20</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-30">.bor-rad-por-30</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-40">.bor-rad-por-40</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-3 c-white ta-c bg-black bor-rad-por-50">.bor-rad-por-50</div>
+    </div>
+</pre>
+</div>
+
+
+                <div class="alert mt-3">
+                    <h4 class="c-blue-s"><i class=" bs-info c-blue-s fz-28 ">&nbsp;</i>Información</h4>
+                    <p>
+                        Como se puede observar en el código se utilizaron las clases de <a href="grid.html" class="link tips-ele"
+                        data-tips="<i class='bs-code c-yellow'>&nbsp;</i> Docs Grilla" data-pos="top">Grid</a>,
+                        las clases de <a href="padding.html" class="link tips-ele"
+                        data-tips="<i class='bs-code c-yellow'>&nbsp;</i> Docs Padding" data-pos="top">Padding</a>, y las clases de <a href="colores.html" class="link tips-ele"
+                        data-tips="<i class='bs-code c-yellow'>&nbsp;</i> Docs Colores" data-pos="top">Colores</a> 
+                        para mejorar la presentación de los ejemplos.
+                        Es recomendable revisar estas secciones para comprender bien como las diferentes funcionalidades son integradas 
+                        en Bodystyle.
+                    </p>
+                </div>
+
+
+            </article>
+
+            <article class="article">
+                <h2 id="4" class="scroll-item">Bordes</h2>
+                <p>
+                    En esta sección veremos como añadirle bordes a los elementos, en primera instancia veremos los bordes 
+                    de color negro a través de la clase <span class="badge badge-red">.bor-[PX]</span> siendo PX 
+                    el tamaño en PX del borde.
+                </p>
+
+                <div class="row p-1 bg-white mt-3">
+                    <div class="bg-red p-2 ta-c bor-1 csx-12 cs-6 cm-4 cl-3">.bor-1</div>
+                    <div class="bg-red p-2 ta-c bor-2 csx-12 cs-6 cm-4 cl-3">.bor-2</div>
+                    <div class="bg-red p-2 ta-c bor-3 csx-12 cs-6 cm-4 cl-3">.bor-3</div>
+                    <div class="bg-red p-2 ta-c bor-4 csx-12 cs-6 cm-4 cl-3">.bor-4</div>
+                    <div class="bg-red p-2 ta-c bor-5 csx-12 cs-6 cm-4 cl-3">.bor-5</div>
+                    <div class="bg-red p-2 ta-c bor-6 csx-12 cs-6 cm-4 cl-3">.bor-6</div>
+                    <div class="bg-red p-2 ta-c bor-7 csx-12 cs-6 cm-4 cl-3">.bor-7</div>
+                    <div class="bg-red p-2 ta-c bor-8 csx-12 cs-6 cm-4 cl-3">.bor-8</div>
+                    <div class="bg-red p-2 ta-c bor-9 csx-12 cs-6 cm-4 cl-3">.bor-9</div>
+                    <div class="bg-red p-2 ta-c bor-10 csx-12 cs-6 cm-4 cl-3">.bor-10</div>
+                </div>
+
+<div class="codigo mt-3">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <div class="row p-1 bg-white mt-3">
+        <div class="bg-red p-2 ta-c bor-1 csx-12 cs-6 cm-4 cl-3">.bor-1</div>
+        <div class="bg-red p-2 ta-c bor-2 csx-12 cs-6 cm-4 cl-3">.bor-2</div>
+        <div class="bg-red p-2 ta-c bor-3 csx-12 cs-6 cm-4 cl-3">.bor-3</div>
+        <div class="bg-red p-2 ta-c bor-4 csx-12 cs-6 cm-4 cl-3">.bor-4</div>
+        <div class="bg-red p-2 ta-c bor-5 csx-12 cs-6 cm-4 cl-3">.bor-5</div>
+        <div class="bg-red p-2 ta-c bor-6 csx-12 cs-6 cm-4 cl-3">.bor-6</div>
+        <div class="bg-red p-2 ta-c bor-7 csx-12 cs-6 cm-4 cl-3">.bor-7</div>
+        <div class="bg-red p-2 ta-c bor-8 csx-12 cs-6 cm-4 cl-3">.bor-8</div>
+        <div class="bg-red p-2 ta-c bor-9 csx-12 cs-6 cm-4 cl-3">.bor-9</div>
+        <div class="bg-red p-2 ta-c bor-10 csx-12 cs-6 cm-4 cl-3">.bor-10</div>
+    </div>
+</pre>
+</div>
+
+            <h3 id="5" class="scroll-item">Bordes Colores</h3>
+            <p>
+                Ahora veremos como utilizar bordes de colores para lo cual utilizaremos 
+                las clases <span class="badge badge-red">.bor-[COLOR]-[PX]</span> done color 
+                es el color del borde y PX el tamaño en píxeles del mismo.
+            </p>
+
+            <div class="table-responsive">
+                <table class="table-sm selector vertical-border">
+                    <thead>
+                        <tr>
+                            <th>Español</th>
+                            <th>Inglés</th>
+                            <th>Color</th>
+                            <th>Rango</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>bor-[PX]</td>
+                            <td>bor-[PX]</td>
+                            <td><div class="p-1 bg-black"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-rojo-[PX]</td>
+                            <td>bor-red-[PX]</td>
+                            <td><div class="p-1 bg-red"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-rojo-c-[PX]</td>
+                            <td>bor-red-s-[PX]</td>
+                            <td><div class="p-1 bg-red-s"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-rojo-o-[PX]</td>
+                            <td>bor-red-d-[PX]</td>
+                            <td><div class="p-1 bg-red-d-1"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-rojo-t-[PX]</td>
+                            <td>N/A</td>
+                            <td><div class="p-1 fd-rojo-t"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-azul-[PX]</td>
+                            <td>bor-blue-[PX]</td>
+                            <td><div class="p-1 bg-blue"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-azul-c-[PX]</td>
+                            <td>bor-blue-s-[PX]</td>
+                            <td><div class="p-1 bg-blue-s"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-azul-o-[PX]</td>
+                            <td>bor-blue-d-[PX]</td>
+                            <td><div class="p-1 bg-blue-d-1"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-azul-t-[PX]</td>
+                            <td>N/A</td>
+                            <td><div class="p-1 fd-azul-t"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-azul-ve-[PX]</td>
+                            <td>N/A</td>
+                            <td><div class="p-1 fd-azul-ve"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-verde-[PX]</td>
+                            <td>bor-green-[PX]</td>
+                            <td><div class="p-1 fd-verde"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-verde-c-[PX]</td>
+                            <td>bor-green-s-[PX]</td>
+                            <td><div class="p-1 fd-verde-c"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-verde-o-[PX]</td>
+                            <td>bor-green-d-[PX]</td>
+                            <td><div class="p-1 fd-verde-o-1"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-verde-t-[PX]</td>
+                            <td>N/A</td>
+                            <td><div class="p-1 fd-verde-t"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-gris-[PX]</td>
+                            <td>bor-gray-[PX]</td>
+                            <td><div class="p-1 fd-gris"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                        <tr>
+                            <td>bor-gris-c-[PX]</td>
+                            <td>bor-gray-s-[PX]</td>
+                            <td><div class="p-1 fd-gris-c"></div></td>
+                            <td>1 - 10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="6" class="scroll-item mt-3">Ejemplo</h3>
+
+            <div class="row p-1 bg-white">
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-1 c-white">.bor-red-1</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-2 c-white">.bor-red-2</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-3 c-white">.bor-red-3</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-4 c-white">.bor-red-4</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-5 c-white">.bor-red-5</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-6 c-white">.bor-red-6</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-7 c-white">.bor-red-7</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-8 c-white">.bor-red-8</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-9 c-white">.bor-red-9</div>
+                <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-10 c-white">.bor-red-10</div>
+            </div>
+
+
+            
+<div class="codigo mt-3">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <div class="row p-1 bg-white">
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-1 c-white">.bor-red-1</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-2 c-white">.bor-red-2</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-3 c-white">.bor-red-3</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-4 c-white">.bor-red-4</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-5 c-white">.bor-red-5</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-6 c-white">.bor-red-6</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-7 c-white">.bor-red-7</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-8 c-white">.bor-red-8</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-9 c-white">.bor-red-9</div>
+        <div class="cxs-12 cs-6 cm-4 cl-3 p-2 ta-c bg-black bor-red-10 c-white">.bor-red-10</div>
+    </div>
+</pre>
+</div>
+            </article>
+
+            <article class="article">
+                <h2 id="autor" class="scroll-item">Autor</h2>
+                <div id="autor_content"></div>
+            </article>
+
+        </section>
+    </section>
+
+
+
+    <div class="lista-scroll ocultar-desde-medianos">
+        <ul>
+            <li><a href="#1">📇 Bordes</a></li>
+            <li><a href="#2">📇 Referencia Rápida</a></li>
+            <li><a href="#2">📇 Bordes [PX]</a></li>
+            <li><a href="#3">📇 Bordes [%]</a></li>
+            <li><a href="#4">📇 Bordes</a></li>
+            <li><a href="#5">📇 Colores</a></li>
+            <li><a href="#autor">🧑‍🏫 Autor</a></li>
+        </ul>
+    </div>
+
+    <script src="../js/docs-body.js"></script>
+    <script>
+        // Inicializar el Sidebar
+        BS.SidebarDropInit({ idNav: "#nav", idSidebar: "#sidebar", submenu: "#l1" });
+        BS.CommentInit()
+        BS.ToolTipsInit()
+        BS.BotonInicioInit()
+        BS.CodigoHtmlInit()
+        BS.CodigoJsInit()
+        BS.PersonalizadoInit({ori: "disparador"})
+        document.querySelectorAll("#l1 ul li a")[7].classList.add("c-red");
+
+    </script>
+</body>
+
+</html>
+

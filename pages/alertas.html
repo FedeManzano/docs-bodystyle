@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Alertas en CSS para informar y llamar a la atención del usuario.">
+     <link rel="canonical" href="https://bodystyle.webcindario.com/paginas/alertas.html">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="../css/bodystyle.min.css">
+    <link rel="stylesheet" href="../css/docs.css">
+    <link rel="stylesheet"
+        href="https://rawcdn.githack.com/FedeManzano/bodystyle-icons/refs/heads/master/iconos/bs-iconos.min.css">
+    <link rel="stylesheet"
+        href="../css/show-dark.min.css">
+    <title>Alertas</title>
+</head>
+
+<body>
+
+    <section class="theme-light mb-3">
+        <!--Busqueda-->
+        <div id="lista-busqueda" class="search-list"></div>
+        <!--Barra de navegación -->
+        <nav id="nav" class="bs-nav bs-nav-fixed"></nav>
+
+        <div id="sidebar" class="bs-sidebar-drop-light "></div>
+
+        <section id="main">
+             <div id="componente_busqueda" class="input-g mb-2 ancho-50 ancho-m-60 ancho-s-80 ancho-xs-100" role="search">
+                <div class="grupo">
+                    <span id="span_buscador" class="span-grupo c-white" aria-hidden="true">🔎</span>
+                    <input 
+                        aria-label="Buscar en la documentación" 
+                        aria-describedby="search-hint"
+                        aria-controls="search-results"
+                        class="fd-gris-n c-white" 
+                        type="search" 
+                        name="" 
+                        id="buscador" 
+                        placeholder="Buscar en la documentación...">
+                </div>
+            </div>
+            <h1 id="1" class="scroll-item">🚨 Alertas</h1>
+            <p class="fz-20 fz-m-19 fz-s-18 fz-xs-16">
+                Las alertas son componentes visuales utilizados para informar a los usuarios sobre eventos importantes,
+                advertencias o errores en una interfaz de usuario. Su objetivo principal es captar la atención del usuario
+                de manera efectiva y transmitir mensajes cruciales de forma clara y concisa.
+            </p>
+
+            <div id="info_general"></div>
+
+
+            <article class="article">
+                <h2 id="2" class="scroll-item">Tema Light</h2>
+                <p>
+                    La biblioteca provee dos temas predefinidos: Light y Dark. A continuación se muestran ejemplos de alertas
+                    utilizando el tema Light con diferentes variantes de colores y estilos.
+                </p>
+
+                <h3 class="fz-18 mt-3 mb-2">Tipos de Alertas Disponibles</h3>
+                <p>
+                    El tema Light proporciona 6 tipos de alertas diferenciadas por color, cada una optimizada para transmitir 
+                    un mensaje específico al usuario:
+                </p>
+                <div class="lista-doc">
+                    <ul >
+                        <li><strong>Alerta Roja (.bs-alert-red):</strong> Utilizada para mensajes de error, advertencias críticas o acciones destructivas</li>
+                        <li><strong>Alerta Azul (.bs-alert-blue):</strong> Destinada a información general, mensajes informativos o datos importantes</li>
+                        <li><strong>Alerta Amarilla (.bs-alert-yellow):</strong> Ideal para advertencias, avisos o situaciones que requieren atención del usuario</li>
+                        <li><strong>Alerta Blanca (.bs-alert-white):</strong> Utilizada para mensajes neutros o de carácter general</li>
+                        <li><strong>Alerta Gris (.bs-alert-gray):</strong> Para información secundaria o contenido menos relevante</li>
+                        <li><strong>Alerta Verde (.bs-alert-green):</strong> Reservada para mensajes de éxito, confirmaciones o acciones completadas</li>
+                    </ul>
+                </div>
+
+                <h3 class="fz-18 mt-3 mb-2">Tabla de Referencia Rápida</h3>
+                <p>
+                    A continuación se presenta una tabla de referencia rápida con todos los tipos de alertas disponibles:
+                </p>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+                        <thead>
+                            <tr style="background-color: #f0f0f0; border-bottom: 2px solid #ccc;">
+                                <th style="padding: 12px; text-align: left; font-weight: 600;">Clase CSS</th>
+                                <th style="padding: 12px; text-align: left; font-weight: 600;">Tipo</th>
+                                <th style="padding: 12px; text-align: left; font-weight: 600;">Color</th>
+                                <th style="padding: 12px; text-align: left; font-weight: 600;">Casos de Uso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #e0e0e0;">
+                                <td style="padding: 10px;"><code>.bs-alert-red</code></td>
+                                <td style="padding: 10px;"><strong>Error/Crítica</strong></td>
+                                <td style="padding: 10px;">🔴 Rojo</td>
+                                <td style="padding: 10px;">Errores, fallos, acciones destructivas, advertencias críticas</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e0e0e0;">
+                                <td style="padding: 10px;"><code>.bs-alert-blue</code></td>
+                                <td style="padding: 10px;"><strong>Información</strong></td>
+                                <td style="padding: 10px;">🔵 Azul</td>
+                                <td style="padding: 10px;">Datos importantes, información general, mensajes informativos</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e0e0e0;">
+                                <td style="padding: 10px;"><code>.bs-alert-yellow</code></td>
+                                <td style="padding: 10px;"><strong>Advertencia</strong></td>
+                                <td style="padding: 10px;">🟡 Amarillo</td>
+                                <td style="padding: 10px;">Advertencias, avisos, situaciones que requieren atención</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e0e0e0;">
+                                <td style="padding: 10px;"><code>.bs-alert-white</code></td>
+                                <td style="padding: 10px;"><strong>Neutral</strong></td>
+                                <td style="padding: 10px;">⚪ Blanco</td>
+                                <td style="padding: 10px;">Mensajes neutros, contenido general, información estándar</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e0e0e0;">
+                                <td style="padding: 10px;"><code>.bs-alert-gray</code></td>
+                                <td style="padding: 10px;"><strong>Secundaria</strong></td>
+                                <td style="padding: 10px;">⚫ Gris</td>
+                                <td style="padding: 10px;">Información secundaria, contenido menos relevante, detalles</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px;"><code>.bs-alert-green</code></td>
+                                <td style="padding: 10px;"><strong>Éxito</strong></td>
+                                <td style="padding: 10px;">🟢 Verde</td>
+                                <td style="padding: 10px;">Éxito, confirmaciones, acciones completadas, validaciones positivas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                <h3 class="fz-18 mt-3 mb-2">Ejemplos Visuales</h3>
+                <p>
+                    A continuación se muestran ejemplos de cada tipo de alerta en tema Light con sus respectivos estilos:
+                </p>
+
+                <div class="bs-alert-light">
+                    <div class="bs-alert-red">
+                        <div class="title">Error o Alerta Crítica</div>
+                        <div class="content">Estos es el contenido de la alerta roja de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-light mt-1">
+                    <div class="bs-alert-blue">
+                        <div class="title">Información Importante</div>
+                        <div class="content">Estos es el contenido de la alerta azul de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-light mt-1">
+                    <div class="bs-alert-yellow">
+                        <div class="title">Advertencia o Precaución</div>
+                        <div class="content">Estos es el contenido de la alerta amarilla de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-light mt-1">
+                    <div class="bs-alert-white">
+                        <div class="title">Mensaje Neutro</div>
+                        <div class="content">Estos es el contenido de la alerta blanca de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-light mt-1">
+                    <div class="bs-alert-gray">
+                        <div class="title">Información Secundaria</div>
+                        <div class="content">Estos es el contenido de la alerta gris de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-light mt-1">
+                    <div class="bs-alert-green">
+                        <div class="title">Éxito o Confirmación</div>
+                        <div class="content">Estos es el contenido de la alerta verde de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="fz-18 mt-3 mb-2">Características del Tema Light</h3>
+                <p>
+                    El tema Light de las alertas posee las siguientes características de diseño:
+                </p>
+                <div class="lista-doc">
+                    <ul >
+                        <li>Fondos claros y semi-transparentes para mejor integración con el fondo blanco</li>
+                        <li>Bordes sutiles de color que ayudan a identificar el tipo de alerta</li>
+                        <li>Sombras suaves que proporcionan profundidad sin ser invasivas</li>
+                        <li>Texto oscuro para máxima legibilidad en pantallas claras</li>
+                        <li>Tipografía clara con separación entre título y contenido</li>
+                        <li>Animaciones suaves al pasar el cursor (hover) para mayor interactividad</li>
+                    </ul>
+                </div>
+                
+
+                <p class="mt-3">
+                    Como se puede observar en los ejemplos anteriores, las alertas están diseñadas para resaltar mensajes importantes utilizando
+                    diferentes colores y estilos según el tipo de alerta (roja, azul, amarilla, blanca, gris y verde) todos ellos 
+                    pertenecientes al tema Light. Cada color tiene un propósito específico dentro de la experiencia del usuario.
+                </p>
+
+
+<div class="codigo">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <!-- 
+        La estructura es la siguiente:
+        Envolvemos todo en un div con la clase .bs-alert-light
+        Luego dentro de este div, colocamos otro div con la clase correspondiente al tipo de alerta
+        () .bs-alert-red
+        () .bs-alert-blue
+        () .bs-alert-yellow
+        () .bs-alert-white
+        () .bs-alert-gray
+        () .bs-alert-green
+
+        Dentro del div de la alerta, colocamos dos divs más:
+        () .title -> para el título de la alerta
+        () .content -> para el contenido de la alerta
+    -->
+    <div class="bs-alert-light">
+        <div class="bs-alert-red">
+            <div class="title">Estos es el Título</div>
+            <div class="content">Estos es el contenido de la alerta roja de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-light mt-1">
+        <div class="bs-alert-blue">
+            <div class="title">Estos es el Título</div>
+            <div class="content">Estos es el contenido de la alerta azul de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-light mt-1">
+        <div class="bs-alert-yellow">
+            <div class="title">Estos es el Título</div>
+            <div class="content">Estos es el contenido de la alerta amarilla de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-light mt-1">
+        <div class="bs-alert-white">
+            <div class="title">Estos es el Título</div>
+            <div class="content">Estos es el contenido de la alerta blanca de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-light mt-1">
+        <div class="bs-alert-gray">
+            <div class="title">Estos es el Título</div>
+            <div class="content">Estos es el contenido de la alerta blanca de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-light mt-1">
+        <div class="bs-alert-green">
+            <div class="title">Estos es el Título</div>
+            <div class="content">Estos es el contenido de la alerta verde de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+</pre>
+</div>
+                
+
+
+            </article>
+
+
+            <article class="article">
+                <h2 id="3" class="scroll-item">Tema Dark</h2>
+                <p>
+                    Al igual que el tema Light, la biblioteca también ofrece un tema Dark para las alertas. A continuación se muestran ejemplos de alertas
+                    utilizando el tema Dark con diferentes variantes de colores y estilos. <br>
+                    La diferencia es que en vez de envoltarlas en un div con la clase .bs-alert-light, se envuelven en un div con la clase .bs-alert-dark,
+                    luego en ambos temas contamos con las mismas alertas: .bs-alert-red, .bs-alert-blue, .bs-alert-yellow, .bs-alert-white, .bs-alert-gray y .bs-alert-green.
+                </p>
+
+
+                <div class="bs-alert-dark">
+                    <div class="bs-alert-red">
+                        <div class="title">Error o Alerta Crítica</div>
+                        <div class="content">Estos es el contenido de la alerta roja de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-dark mt-1">
+                    <div class="bs-alert-blue">
+                        <div class="title">Información Importante</div>
+                        <div class="content">Estos es el contenido de la alerta azul de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-dark mt-1">
+                    <div class="bs-alert-yellow">
+                        <div class="title">Advertencia o Precaución</div>
+                        <div class="content">Estos es el contenido de la alerta amarilla de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-dark mt-1">
+                    <div class="bs-alert-white">
+                        <div class="title">Mensaje Neutro</div>
+                        <div class="content">Estos es el contenido de la alerta blanca de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-dark mt-1">
+                    <div class="bs-alert-gray">
+                        <div class="title">Información Secundaria</div>
+                        <div class="content">Estos es el contenido de la alerta gris de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bs-alert-dark mt-1">
+                    <div class="bs-alert-green">
+                        <div class="title">Éxito o Confirmación</div>
+                        <div class="content">Estos es el contenido de la alerta verde de bodystyle
+                            que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+                        </div>
+                    </div>
+                </div>
+
+<div class="codigo mt-3">
+    <label for="cod-html" 
+    class="label">
+        HTML 
+        <i class="bs-copy c-bodyui fz-20 btn-copy"></i>
+    </label>
+<pre class="cod-html pt-1">
+    <div class="bs-alert-dark">
+        <div class="bs-alert-red">
+            <div class="title">Error o Alerta Crítica</div>
+            <div class="content">Estos es el contenido de la alerta roja de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-dark mt-1">
+        <div class="bs-alert-blue">
+            <div class="title">Información Importante</div>
+            <div class="content">Estos es el contenido de la alerta azul de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-dark mt-1">
+        <div class="bs-alert-yellow">
+            <div class="title">Advertencia o Precaución</div>
+            <div class="content">Estos es el contenido de la alerta amarilla de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-dark mt-1">
+        <div class="bs-alert-white">
+            <div class="title">Mensaje Neutro</div>
+            <div class="content">Estos es el contenido de la alerta blanca de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-dark mt-1">
+        <div class="bs-alert-gray">
+            <div class="title">Información Secundaria</div>
+            <div class="content">Estos es el contenido de la alerta gris de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+    <div class="bs-alert-dark mt-1">
+        <div class="bs-alert-green">
+            <div class="title">Éxito o Confirmación</div>
+            <div class="content">Estos es el contenido de la alerta verde de bodystyle
+                que viene incluida dentro de la versión <span class="badge badge-red">v6.5.0<span>
+            </div>
+        </div>
+    </div>
+</pre>
+</div>
+
+
+            </article>
+
+
+            <article class="article">
+                <h3 id="autor" class="scroll-item">Autor</h3>
+                <div id="autor_content"></div>
+            </article>
+
+        </section>
+    </section>
+
+
+
+    <div class="lista-scroll ocultar-desde-medianos">
+        <ul>
+            <li><a href="#1">📇 Alertas</a></li>
+            <li><a href="#2">📇 Light</a></li>
+            <li><a href="#3">📇 Dark</a></li>
+            <li><a href="#autor">🧑‍🏫 Autor</a></li>
+        </ul>
+    </div>
+
+    <script src="../js/docs-body.js"></script>
+    <script>
+        // Inicializar el Sidebar
+        BS.SidebarDropInit({ idNav: "#nav", idSidebar: "#sidebar", submenu: "#l2" });
+        BS.CommentInit()
+        BS.ToolTipsInit()
+        BS.BotonInicioInit()
+        BS.CodigoHtmlInit()
+        BS.CodigoJsInit()
+        BS.PersonalizadoInit({ori: "disparador"})
+        document.querySelectorAll("#l2 ul li a")[1].classList.add("c-red");
+
+    </script>
+</body>
+
+</html>
