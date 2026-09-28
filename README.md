@@ -1,6 +1,6 @@
 # Bodystyle Docs
 
-[![Documentation](https://img.shields.io/badge/Docs-Bodystyle-blue?style=for-the-badge)](https://fedemanzano.github.io/docs-bodystyle/pages/personalizados.html)
+[![Documentation](https://img.shields.io/badge/Docs-Bodystyle-blue?style=for-the-badge)](https://fedemanzano.github.io/docs-bodystyle)
 
 Documentación oficial de la biblioteca Bodystyle, construida como un sitio estático de HTML, CSS y JavaScript para mostrar componentes, utilidades, ejemplos y guías de uso.
 
