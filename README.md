@@ -85,6 +85,16 @@ http://localhost:8000
 
 La documentación está pensada para ser consultada en navegador y sirve como guía visual para aprender cómo aplicar Bodystyle en proyectos reales.
 
+## Instalar como aplicación
+
+La documentación incluye soporte PWA. Al visitarla desde un navegador compatible,
+elige **Instalar Bodystyle Docs** o **Agregar a la pantalla de inicio** en el menú
+del navegador. Se abrirá como una aplicación independiente y las páginas visitadas
+quedarán disponibles para consultar sin conexión.
+
+La instalación requiere servir el sitio mediante HTTPS (GitHub Pages ya lo hace)
+o desde `localhost`. No funciona al abrir los archivos con `file://`.
+
 Si quieres probar el framework en un proyecto nuevo, revisa la sección de inicio rápido dentro de la documentación:
 
 - `pages/get_started.html`
@@ -121,4 +131,3 @@ Proyecto basado en Bodystyle y su documentación visual, desarrollada para facil
 ### Hecho con ❤️ por **Fede Manzano**
 
 </div>
-
